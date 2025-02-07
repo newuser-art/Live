@@ -1,0 +1,6 @@
+"scripts": {
+  "startserver": "nodemon server.js",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "vercel-build": "npm run build"
+}
