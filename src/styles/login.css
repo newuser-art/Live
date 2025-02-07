@@ -1,0 +1,98 @@
+
+
+* {
+  margin: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-page {
+  height: 100%; /* Ensure full viewport height */
+  margin: 0; /* Remove default margins */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background: url("../images/img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+  /* src/App.css */
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    /* background: #ffffff; */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    border-radius: 40px;
+    margin-bottom: 15px;
+  }
+  
+  /* .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  } */
+  
+  .input-group input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    color: white; /* Text color */
+    background: transparent;
+  }
+  
+  .input-group input::placeholder {
+    color: rgb(255, 255, 255); /* Placeholder color (semi-transparent white) */
+    font-style: italic; /* Optional: italicize the placeholder text */
+  }
+  
+  .end{
+    
+    padding-top: 0%;
+    /* border: 1px solid black;
+    border-radius: 9px; */
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+ 
+  
+  .loginbu {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .eletext{
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  

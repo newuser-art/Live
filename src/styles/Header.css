@@ -1,0 +1,145 @@
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* Adjusted height for better visibility */
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Title on the left, nav on the right */
+  align-items: center; /* Vertically center the content */
+  padding: 0 20px; /* Add space on the sides to avoid overflow */
+  background-color: #ffffff; /* Light background for the header */
+  border-bottom: 1px solid #404040; /* Optional: Add a bottom border */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  background: url(../images/1111.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Brand/Logo Styling */
+.brand {
+  font-size: 24px; /* Bigger for emphasis */
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #ffffff, #ff758c); /* Gradient effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Cool text effect */
+  text-shadow: 0 2px 10px rgb(255, 255, 255); /* Soft glow */
+  transition: text-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Animation */
+.brand:hover {
+  text-shadow: 0 4px 15px rgba(255, 117, 140, 0.8); /* Stronger glow */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/* Auth Links */
+.auth {
+  margin-right: 0; /* Remove extra margin to prevent overflow */
+  display: flex; /* Make links inline */
+  gap: 10px; /* Space between the links */
+}
+
+.auth a {
+  text-decoration: none;
+  color: #ffffff; /* Blue link color */
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.auth a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Username Button */
+.usernamebutton {
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #416242;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ea0c;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 50px; /* Distance from the top */
+  right: 0; 
+  margin-right: 10px;
+  width: 100px; /* Set a fixed width, adjust as needed */
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 9999;
+  padding: 10px; /* Ensure sufficient padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  border: none;
+  z-index: 9999;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Username Button */
+.usernamebutton {
+  display: none; /* Hidden since the username is replaced by an image */
+}
+
+/* Prevent Horizontal Scrolling */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Ensure Parent Container Does Not Overflow */
+* {
+  box-sizing: border-box; /* Include padding in element's width/height */
+  margin: 0;
+  padding: 0;
+}
